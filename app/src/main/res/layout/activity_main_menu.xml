@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abhinabera.jarvis.MainMenu"
+    android:background="#9fa8da"
+    android:clickable="true">
+
+
+    <br.com.bloder.magic.view.MagicButton
+        android:id="@+id/ips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:magic_button_size="100dp"
+        app:button_icon="@drawable/ips"
+        app:button_icon_width="75dp"
+        app:button_icon_height="75dp"
+        app:hide_text="INDOOR POSITIONING"
+        app:hide_text_size="4.5dp"
+        app:hide_text_color="@android:color/black"
+        app:icon_button_color="@color/colorPrimary"
+        app:expandable_area_color="@color/colorAccent"
+        android:layout_marginTop="65dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentTop="true">
+
+    </br.com.bloder.magic.view.MagicButton>
+
+    <br.com.bloder.magic.view.MagicButton
+        android:id="@+id/bodysensing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:magic_button_size="100dp"
+        app:button_icon="@drawable/bodysensing"
+        app:button_icon_width="75dp"
+        app:button_icon_height="75dp"
+        app:hide_text="BODY SENSING"
+        app:hide_text_size="5dp"
+        android:layout_marginTop="20dp"
+        app:hide_text_color="@android:color/black"
+        app:icon_button_color="@color/colorPrimary"
+        app:expandable_area_color="@color/colorAccent"
+        android:layout_marginLeft="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/ips" >
+
+    </br.com.bloder.magic.view.MagicButton>
+
+    <br.com.bloder.magic.view.MagicButton
+        android:id="@+id/activity_recognition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:magic_button_size="100dp"
+        android:layout_centerHorizontal="true"
+        app:button_icon="@drawable/activityrecognition"
+        app:button_icon_width="75dp"
+        app:button_icon_height="75dp"
+        app:hide_text="ACTIVITY RECOGNITION"
+        app:hide_text_size="4.5dp"
+        app:hide_text_color="@android:color/black"
+        app:icon_button_color="@color/colorPrimary"
+        app:expandable_area_color="@color/colorAccent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/bodysensing" />
+
+    <br.com.bloder.magic.view.MagicButton
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:magic_button_size="100dp"
+        android:layout_centerHorizontal="true"
+        app:button_icon="@drawable/quit"
+        app:button_icon_width="75dp"
+        app:button_icon_height="75dp"
+        app:hide_text="QUIT"
+        app:hide_text_size="5dp"
+        app:hide_text_color="@android:color/black"
+        app:icon_button_color="@color/colorPrimary"
+        app:expandable_area_color="@color/colorAccent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/activity_recognition" />
+</RelativeLayout>
